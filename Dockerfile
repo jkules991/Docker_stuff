@@ -14,7 +14,7 @@ RUN mvn clean package
 
 # create a new build stage from the Java image
 # which has java installed already
-FROM java:8
+FROM openjdk:8
 
 # change the working directory to where the application
 # is going to be installed
